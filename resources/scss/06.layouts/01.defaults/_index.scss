@@ -1,0 +1,17 @@
+.site-content {
+	margin: 1.125rem auto;
+	max-width: 74.25rem; // 1188px
+	padding: 1.125rem; // 18px
+}
+
+.left-sidebar {
+	.content-area {
+		float: right;
+		width: 71.006944444%
+	}
+
+	.widget-area {
+		float: left;
+		width: 25.868055556%; // 298px;
+	}
+}

@@ -10,6 +10,12 @@
   vertical-align: baseline;
 }
 
+.site-content:before, .site-content:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 body {
   font-family: var(--font-family-primary, "Merriweather", serif);
   font-size: 1rem;
@@ -61,6 +67,21 @@ h6 {
   font-size: 1rem;
   font-weight: 700;
   margin: 2.33em 0;
+}
+
+.site-content {
+  margin: 1.125rem auto;
+  max-width: 74.25rem;
+  padding: 1.125rem;
+}
+
+.left-sidebar .content-area {
+  float: right;
+  width: 71.006944444%;
+}
+.left-sidebar .widget-area {
+  float: left;
+  width: 25.868055556%;
 }
 
 .site-header {
@@ -169,6 +190,13 @@ h6 {
     transition-delay: 0s, 0s, 0.3s;
   }
 }
+.site-footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 1.125rem;
+  text-align: center;
+}
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
