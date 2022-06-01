@@ -1,0 +1,27 @@
+{
+	"name": "inheritance",
+	"version": "1.0.0",
+	"description": "inheritance is a WordPress Starter Theme.",
+	"main": "resources/assets/js/app.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/benlumia007/inheritance.git"
+	},
+	"author": "Benjamin Lu",
+	"license": "GPL-2.0+",
+	"bugs": {
+		"url": "https://github.com/benlumia007/inheritance/issues"
+	},
+	"homepage": "https://github.com/benlumia007/inheritance#readme",
+	"scripts": {
+		"build": "npm run prod && npm run export",
+		"watch": "mix watch",
+		"prod": "mix --production",
+		"export": "mix --mix-config=webpack.mix.export.js"
+	},
+	"devDependencies": {
+		"laravel-mix": "^6.0.31",
+		"sass": "^1.42.1",
+		"sass-loader": "^11.1.1"
+	}
+}
