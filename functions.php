@@ -1,0 +1,23 @@
+<?php
+/**
+ * Theme functions file.
+ * 
+ * This file is used to bootstrap the theme.
+ *
+ * @package   Inheritance
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2022. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/benlumia007/inheritance
+ */
+
+# ------------------------------------------------------------------------------
+# Bootstrap the theme.
+# ------------------------------------------------------------------------------
+#
+# Load the bootstrap files. Note that autoloading should happen first so that
+# any classes/functions are available that we might need.
+
+if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
+	require_once get_parent_theme_file_path( '/vendor/autoload.php' );
+}
