@@ -1,0 +1,107 @@
+//
+// Initiator ( components/navigations/primary/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+
+
+@media screen and ( min-width: 769px ) {
+	.primary-menu {
+		background: color( black );
+		padding: 1.125rem;
+
+		.menu-toggle {
+			display: none;
+		}
+
+		.menu-items {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: static;
+			justify-content: flex-end;
+
+			.menu-item {
+				left: unset;
+				position: relative;
+				width: max-content;
+
+				&.menu-item-has-children {
+					> {
+						a {
+							&:after {
+								color: color( white );
+								content: "\f078";
+								font-family: 'Font Awesome 5 Free';
+								text-decoration: none;
+								margin-left: 0.5rem;
+						   }
+						}
+					}
+				}
+
+				&.current-menu-item {
+					a {
+						color: color( white );
+						padding: 0.5rem 1rem;
+						text-decoration: underline;
+						text-decoration-thickness: 2px;
+						text-underline-offset: 4px;
+					}
+				}
+
+				a {
+					color: color( white );
+					padding: 0.5rem 1rem;
+					text-decoration: none;
+				}
+
+				.dropdown-toggle {
+					display: none;
+				}
+
+				.sub-menu {
+					background: color( black );
+					left: 0;
+					list-style-type: none;
+					margin: 0.7rem 0;
+					opacity: 0;
+					padding: 0.5rem 0;
+					position: absolute;
+					transform: translateY( -1em );
+					visibility: hidden;
+					transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+					.menu-item {
+						margin: 0 0 0.5rem 0;
+						padding: 0.5rem;
+
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
+
+				&:hover,
+				&:focus-within,
+				&.focus {
+					.sub-menu {
+						left: 0;
+						visibility: visible; /* shows sub-menu */
+						opacity: 1;
+						z-index: 1;
+						transform: translateY(0%);
+						transition-delay: 0s, 0s, 0.3s
+					}
+				}
+			}
+		}
+
+
+	}
+}
