@@ -1,0 +1,75 @@
+//
+// Initiator ( components/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+.left-sidebar {
+	.content-area {
+		line-height: 1.8rem;
+
+		.post {
+			margin-top: 3rem;
+			clear: both;
+			content: "";
+			display: table;
+
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.entry-header {
+				.entry-title {
+					margin: 0;
+					padding: 0;
+				}
+			}
+
+			.entry-main {
+				clear: both;
+				content: "";
+				display: table;
+				margin: 1.125rem 0;
+
+				.entry-metadata {
+					float: right;
+					width: 21.759259259259259%;
+
+					.fa-user,
+					.fa-calendar-alt,
+					.fa-comment {
+						display: none;
+					}
+
+					.entry-author,
+					.entry-published,
+					.entry-comments {
+						display: block;
+						font-family: font-family( date );
+						font-size: 1.8rem;
+						margin: 0.2rem 0;
+					}
+
+				}
+
+				.entry-excerpt {
+					float: left;
+					width: 75.650118203309693%;
+				}
+			}
+
+			.entry-taxonomies {
+				font-size: 14px;
+				margin-top: 0.2rem;
+
+				.fa-folder-open {
+					display: none;
+				}
+			}
+		}
+	}
+}

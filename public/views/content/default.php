@@ -14,13 +14,15 @@
 			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'initiator' ) ); ?>
 		<?php } ?>
 		<?php Benlumia007\Backdrop\Theme\Entry\display_title(); ?>
+	</header>
+	<div class="entry-main">
 		<div class="entry-metadata">
 			<?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
 			<?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
 			<?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
 		</div>
-	</header>
-	<div class="entry-excerpt">
-		<?php the_excerpt(); ?>
+		<div class="entry-excerpt">
+			<?php the_excerpt(); ?>
+		</div>
 	</div>
 </article>
